@@ -2,6 +2,8 @@
 
 This project implements a real-time sound monitoring and alert system using an ESP32 microcontroller. It continuously monitors analog microphone input, detects loud sound events based on a configurable threshold, records a short audio snippet, saves it to SPIFFS, and publishes an alert message with metadata to an MQTT broker.
 
+## [LIVE PROJECT DEMO ON Wokwi](https://wokwi.com/projects/436014092905533441)
+
 ## Features
 
 * **Continuous Analog Input Monitoring:** Utilizes the ESP32's internal ADC to constantly sample microphone input. 
