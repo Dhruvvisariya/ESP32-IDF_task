@@ -4,13 +4,13 @@ This project implements a real-time sound monitoring and alert system using an E
 
 ## Features
 
-* [cite_start]**Continuous Analog Input Monitoring:** Utilizes the ESP32's internal ADC to constantly sample microphone input. [cite: 245, 259]
-* [cite_start]**Loud Sound Event Detection:** Configurable threshold (`LOUD_SOUND_THRESHOLD_DEVIATION`) to identify significant sound events. [cite: 246]
-* [cite_start]**On-Demand Audio Recording:** Records a 3-second audio snippet (300 samples at 100 Hz) upon sound detection. [cite: 246, 374]
-* [cite_start]**Local Storage (SPIFFS):** Saves recorded audio as raw binary (`.raw`) files to the ESP32's SPIFFS flash memory. [cite: 246, 195]
-* [cite_start]**Wi-Fi Connectivity:** Connects to a specified Wi-Fi network to enable MQTT communication. [cite: 247, 370]
-* [cite_start]**MQTT Alerting:** Publishes JSON-formatted messages to a public MQTT broker (`broker.hivemq.com`) with details about the detected sound event, including timestamp, amplitude, and filename. [cite: 248, 170, 377]
-* [cite_start]**Detailed Serial Logging:** Provides real-time feedback on threshold crossings, recording progress, file operations, and MQTT communication. [cite: 372, 373, 196, 180]
+* **Continuous Analog Input Monitoring:** Utilizes the ESP32's internal ADC to constantly sample microphone input. 
+* **Loud Sound Event Detection:** Configurable threshold (`LOUD_SOUND_THRESHOLD_DEVIATION`) to identify significant sound events. 
+* **On-Demand Audio Recording:** Records a 3-second audio snippet (300 samples at 100 Hz) upon sound detection. 
+* **Local Storage (SPIFFS):** Saves recorded audio as raw binary (`.raw`) files to the ESP32's SPIFFS flash memory. 
+* **Wi-Fi Connectivity:** Connects to a specified Wi-Fi network to enable MQTT communication. 
+* **MQTT Alerting:** Publishes JSON-formatted messages to a public MQTT broker (`broker.hivemq.com`) with details about the detected sound event, including timestamp, amplitude, and filename. 
+* **Detailed Serial Logging:** Provides real-time feedback on threshold crossings, recording progress, file operations, and MQTT communication. 
 
 ## Hardware Requirements
 
